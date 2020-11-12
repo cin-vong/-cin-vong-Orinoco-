@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/media.css" />
+  <title>Orinoco</title>
+</head>
+
+  <body>
+    <div class="page-container">
+      <header>
+        <div class="header_produit">
+          <div>
+            <img src="css/images/Orinoco.png" alt="Logo Orinoco" />
+          </div>
+          <div class="header-orinounours">
+            <h1>Orinounours</h1>
+          </div>
+          <nav>
+            <div class="header-lien">
+              <ul class="header-navigation">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="recapitulatif">
+          <h2>Récapitulatif de votre commande</h2>
+          <p>
+            Veuillez vérifier votre commande ci-dessous avant de valider le
+            paiement.
+          </p>
+          <div id="panier-recap">
+            <p id="panierVide">Votre panier est vide</p>
+          </div>
+        </section>
+        <section class="formulaire_commande">
+          <h2>Passer la commande de votre(vos) peluche(s)</h2>
+          <div class="cadre">
+            <form method="post" name="formContact" id="form_1">
+              <div class="form-group">
+                <label for="nom">
+                  Nom de famille
+                </label>
+                <input
+                  type="text"
+                  id="nom"
+                  name="nom"
+                  class="form-control"
+                  required
+                  autofocus
+                  placeholder="Renseignez votre nom de famille"
+                />
+              </div>
+              <div class="form-group">
+                <label for="prenom">
+                  Prénom
+                </label>
+                <input
+                  type="text"
+                  id="prenom"
+                  name="prenom"
+                  class="form-control"
+                  required
+                  placeholder="Renseignez votre prénom"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">
+                  Adresse email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  required
+                  placeholder="Entrez une adresse mail valide"
+                />
+              </div>
+              <div class="form-group">
+                <label for="adresse">
+                  Adresse postale et de facturation
+                </label>
+                <input
+                  type="text"
+                  id="adresse"
+                  name="adresse"
+                  class="form-control"
+                  required
+                  placeholder="Ex: 5, avenue Victor Hugo"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="ville">
+                  Ville
+                </label>
+                <input
+                  type="text"
+                  id="ville"
+                  name="ville"
+                  class="form-control"
+                  required
+                  placeholder="Ex: "
+                />
+              </div>
+              <div class="form-group">
+                <label>
+                  Choix du moyen de paiement
+                </label>
+                <div id="carte">
+                  <input
+                    type="radio"
+                    class="paiement"
+                    name="identifieur"
+                    value="Visa"
+                    checked
+                  /><i class="fab fa-cc-visa fa-2x"></i>
+                  <input
+                    type="radio"
+                    class="paiement"
+                    name="identifieur"
+                    value="Mastercard"
+                  /><i class="fab fa-cc-mastercard fa-2x"></i>
+                  <input
+                    type="radio"
+                    class="paiement"
+                    name="identifieur"
+                    value="Paypal"
+                  /><i class="fab fa-cc-paypal fa-2x"></i>
+                </div>
+              </div>
+
+              <button id="commander" type="submit" name="commander">
+                Commander
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p id="copyright">Copyright © 2020 Orinounours by Orinoco - Tous droits réservés</p>
+    </footer>
+    </div>
+    <script
+    src="https://kit.fontawesome.com/ffb09557c8.js" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+<script src="js/panier.js"></script>
+<script src="js/formulaire.js"></script>
+<script src="js/confirmation.js"></script>
+<script>
+  panierCreation();
+</script>
+<script>
+  confirmCommande();
+</script>
+  </body>
+</html>

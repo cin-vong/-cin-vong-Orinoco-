@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/media.css" />
+  <title>Orinoco</title>
+</head>
+  <body>
+    <div class="page-container">
+      <header>
+        <div class="header_produit">
+          <div>
+            <img src="css/images/Orinoco.png" alt="Logo Orinoco" />
+          </div>
+          <div class="header-orinounours">
+            <h1>Orinounours</h1>
+          </div>
+          <nav>
+            <div class="header-lien">
+              <ul class="header-navigation">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="panier.html"
+                    ><i class="fas fa-shopping-cart fa-1x"></i>Panier (<span id="produitPanier"></span>)</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section id="detailProduit">
+          <h2>Liste des produits</h2>
+          <div id="detailOption">
+            <p>Choisissez votre couleur :</p>
+            <select
+              name="option"
+              id="choix_option"
+              required
+              aria-invalid="false"
+            >
+              <option disabled value="" selected>Choix couleur</option>
+            </select>
+          </div>
+
+          <button id="ajout_panier">Ajouter au panier</button>
+        </section>
+      </main>
+      <footer>
+        <p id="copyright">Copyright © 2020 Orinounours by Orinoco - Tous droits réservés</p>
+    </footer>
+      <script
+        src="https://kit.fontawesome.com/ffb09557c8.js" crossorigin="anonymous"></script>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/panier.js"></script>
+    <script src="js/formulaire.js"></script>
+    <script src="js/confirmation.js"></script>
+    <script>
+      detailTeddies();
+    </script>
+    <script>
+      ajoutPanier();
+    </script>
+    <script>
+      nombreProduitPanier();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/media.css" />
+  <title>Orinoco</title>
+</head>
+
+  <body>
+    <div class="page-container">
+      <header>
+        <div class="header_produit">
+          <div>
+            <img src="css/images/Orinoco.png" alt="Logo Orinoco" />
+          </div>
+          <div class="header-orinounours">
+            <h1>Orinounours</h1>
+          </div>
+          <nav>
+            <div class="header-lien">
+              <ul class="header-navigation">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="confirmation">
+          <h2>Confirmation de votre commande</h2>
+          <p class="textConfirm">Bonjour <span id="firstName"></span>,</p>
+          <p class="textConfirm">
+            Nous vous remercions pour votre achat. Nous vous tiendrons informés
+            par e-mail lorsque les articles de votre commande auront été
+            expédiés.
+          </p>
+          <p class="textConfirm">
+            Votre N° de commande est :
+          </p>
+          <p id="orderId"></p>
+          <p class="textConfirm">
+            Merci de noter ce numéro et d'en faire référence pour toute
+            communication avec nos services concernant cette commande.
+          </p>
+          <p class="textConfirm">Nous espérons vous revoir très bientôt.</p>
+          <p class="textConfirm">L'équipe d'Orinounours</p>
+
+          <p class="textConfirm">Ci-dessous le détail de votre commande :</p>
+        </section>
+        <section class="recapitulatif">
+          <h2>Détail de la commande</h2>
+          <div id="confirmation-recap"></div>
+          <div class="retourAccueil">
+            <a href="index.html">Retourner à l'accueil</a>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p id="copyright">Copyright © 2020 Orinounours by Orinoco - Tous droits réservés</p>
+    </footer>
+      <script
+        src="https://kit.fontawesome.com/ffb09557c8.js" crossorigin="anonymous"></script>
+  </div>
+  <script src="js/index.js"></script>
+  <script src="js/panier.js"></script>
+  <script src="js/formulaire.js"></script>
+  <script src="js/confirmation.js"></script>
+  <script>
+    confirmRecap();
+  </script>
+  <script>
+    retourOrder();
+  </script>
+  </body>
+</html>
